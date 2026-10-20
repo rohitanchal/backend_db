@@ -1,0 +1,31 @@
+{
+  "name": "mongovault-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "src",
+      "./.env"
+    ],
+    "ext": "js,json,env"
+  },
+  "dependencies": {
+    "bson": "^6.10.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "mongodb": "^6.20.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
